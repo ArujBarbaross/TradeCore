@@ -2,6 +2,8 @@
 
 The assignment is published without the database, so you need to run the migration before use.
 
+There is not much in terms of documentation or tests, because it was tedious to do as is. You might want to reconcider the scope of the assignment.
+
 ## Blog platform
 
 **Important!** Because the specified Hunter and Clearbit require a phone number to use, I don't use them. There are placeholders in `serializers.py` and `models.py` for where their usage would be placed.
@@ -14,3 +16,11 @@ User managment API is managed via [Djoser](https://github.com/sunscrapers/djoser
 
 Default user model was not modified. For simplification, all the APIs require a user to use.
 
+## Bot
+
+The bot is designed using Requests.
+The usernames that the bot is using are predetermined, so after the first run, no new users will be created. Results may vary.
+
+The bot takes random words from here `http://svnweb.freebsd.org/csrg/share/dict/words?view=co&content-type=text/plain` and requires internet connection to function.
+
+Use by running `python bot.py`.
